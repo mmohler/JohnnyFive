@@ -3,11 +3,14 @@ int a,b;
 void setup() {
   pinMode(Pin::mazeSizeA, INPUT_PULLUP);
   pinMode(Pin::mazeSizeB, INPUT_PULLUP);  
-  Serial.begin(115200);
+  pinMode(Pin::goBtn, INPUT_PULLUP);
+  Serial.begin(9600);
 }
 void loop() {
   a = (int)digitalRead(Pin::mazeSizeA);
   b = (int)digitalRead(Pin::mazeSizeB);
+  Serial.print((int)digitalRead(Pin::goBtn));
+  Serial.print(" | ");
   if (!a && b) {
     Serial.println("5x5");
   }

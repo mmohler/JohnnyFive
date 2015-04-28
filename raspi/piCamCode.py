@@ -69,4 +69,3 @@ for i in length(cells):
         print(cells[i])
         print(', ')
         print(chars[i])
-	

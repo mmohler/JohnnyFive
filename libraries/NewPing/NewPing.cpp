@@ -42,7 +42,7 @@ unsigned int NewPing::ping() {
 
 
 unsigned int NewPing::ping_in() {
-	unsigned int echoTime = NewPing::ping();          // Calls the ping method and returns with the ping echo distance in uS.
+	unsigned int echoTime = NewPing::ping_median(5);          // Calls the ping method and returns with the ping echo distance in uS.
 	return NewPingConvert(echoTime, US_ROUNDTRIP_IN); // Convert uS to inches.
 }
 
@@ -51,7 +51,6 @@ unsigned int NewPing::ping_cm() {
 	unsigned int echoTime = NewPing::ping();          // Calls the ping method and returns with the ping echo distance in uS.
 	return NewPingConvert(echoTime, US_ROUNDTRIP_CM); // Convert uS to centimeters.
 }
-
 
 unsigned int NewPing::ping_median(uint8_t it) {
 	unsigned int uS[it], last;

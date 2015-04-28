@@ -1,0 +1,31 @@
+###################################
+# Syntax Coloring Map For NavPack
+###################################
+
+###################################
+# Datatypes (KEYWORD1)
+###################################
+
+NavPack	KEYWORD1
+
+###################################
+# Methods and Functions (KEYWORD2)
+###################################
+
+recordMove	KEYWORD2
+initMaze	KEYWORD2
+getCell		KEYWORD2
+generateCritical	KEYWORD2
+getNextMove	KEYWORD2
+atEndCell	KEYWORD2
+atStartCell	KEYWORD2
+
+###################################
+# Constants (LITERAL1)
+###################################
+
+orientation	LITERAL1
+cell		LITERAL1
+solved		LITERAL1
+
+

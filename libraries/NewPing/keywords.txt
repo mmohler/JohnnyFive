@@ -15,6 +15,7 @@ NewPing	KEYWORD1
 ping	KEYWORD2
 ping_in	KEYWORD2
 ping_cm	KEYWORD2
+ping_avg	KEYWORD2
 ping_median	KEYWORD2
 ping_timer	KEYWORD2
 check_timer	KEYWORD2
